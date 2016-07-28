@@ -133,7 +133,7 @@ public:
 
       joint_effort_command_interface_.registerHandle(jh);
 
-      myo_interface::MyoMuscleJointHandle mmjh(jh, &it->second->displacement_, it->second->analogIN_);
+      myo_interface::MyoMuscleJointHandle mmjh(jh, &it->second->displacement_, it->second->analogIN_, &it->second->digitalOut_);
 
       myo_muscle_joint_interface_.registerHandle(mmjh);
     }
@@ -254,7 +254,7 @@ public:
 
       joint_effort_command_interface_.registerHandle(jh);
 
-      myo_interface::MyoMuscleJointHandle mmjh(jh, &it->second->displacement_, it->second->analogIN_);
+      myo_interface::MyoMuscleJointHandle mmjh(jh, &it->second->displacement_, it->second->analogIN_, &it->second->digitalOut_);
 
       myo_muscle_joint_interface_.registerHandle(mmjh);
     }
