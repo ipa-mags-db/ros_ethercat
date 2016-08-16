@@ -1,5 +1,8 @@
 ros_ethercat
 ------------
+## MODIFIED!
+
+  Attention, this package was modified from the original ros_ethercat.
 
 ## Overview
 
