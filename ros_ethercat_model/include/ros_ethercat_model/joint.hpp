@@ -159,6 +159,9 @@ public:
   /// The analogIn sensor values used for jointangle-sensor (read-only variable)
   double analogIN_[6];
 
+  /// The digitalOut wich coresponse to the MyoMuscle
+  bool digitalOut_;
+
   // joint statistics
   JointStatistics joint_statistics_;
 
